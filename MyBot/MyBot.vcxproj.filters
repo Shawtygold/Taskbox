@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DPP">
+      <UniqueIdentifier>{0c7369e9-66c5-45ca-8a7d-8891f46001be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\commands">
+      <UniqueIdentifier>{bac35e70-fb0e-447b-b2ff-444f9c00c54a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\commands\moderation">
+      <UniqueIdentifier>{204ecd3b-4785-40b4-b9de-33cdf0832f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{fe932d14-905a-4c65-ac87-966400a4a4a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\moderation">
+      <UniqueIdentifier>{93f347f6-c555-4ac5-b1c7-57ac1eda9ee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\managers">
+      <UniqueIdentifier>{6861d799-f8df-4dc4-bb16-d8ace108c426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\structures">
+      <UniqueIdentifier>{fab138a6-59a3-4226-a66b-418aecd72cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\commands\tasks">
+      <UniqueIdentifier>{37f83abe-9e53-4daa-b862-02d1663105fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\tasks">
+      <UniqueIdentifier>{a9e6e090-b3c1-4ea4-bdbb-3ac8ced56b78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyBot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ban.cpp">
+      <Filter>Source Files\src\moderation</Filter>
+    </ClCompile>
+    <ClCompile Include="kick.cpp">
+      <Filter>Source Files\src\moderation</Filter>
+    </ClCompile>
+    <ClCompile Include="embed_manager.cpp">
+      <Filter>Source Files\src\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="timeout.cpp">
+      <Filter>Source Files\src\moderation</Filter>
+    </ClCompile>
+    <ClCompile Include="bot.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="task.cpp">
+      <Filter>Source Files\src\structures</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files\src\structures</Filter>
+    </ClCompile>
+    <ClCompile Include="setconfig.cpp">
+      <Filter>Source Files\src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="database_manager.cpp">
+      <Filter>Source Files\src\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="sendpanel.cpp">
+      <Filter>Source Files\src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="create_task.cpp">
+      <Filter>Source Files\src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="close_task.cpp">
+      <Filter>Source Files\src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="open_task.cpp">
+      <Filter>Source Files\src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="delete_task.cpp">
+      <Filter>Source Files\src\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\auditlog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\ban.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\cluster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\commandhandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\discord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\discordclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\discordevents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\discordvoiceclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\dispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\dpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\dtemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\emoji.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\etf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\guild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\httplib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\integration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\intents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\invite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\json_fwd.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\presence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\prune.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\queues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\role.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\slashcommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\sslclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\stage_instance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\stringops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\sysdep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\user.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\voiceregion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\voicestate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\webhook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\win32_safe_warnings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\dpp-10.0\dpp\wsclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBot.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ban.h">
+      <Filter>Source Files\commands\moderation</Filter>
+    </ClInclude>
+    <ClInclude Include="kick.h">
+      <Filter>Source Files\commands\moderation</Filter>
+    </ClInclude>
+    <ClInclude Include="timeout.h">
+      <Filter>Source Files\commands\moderation</Filter>
+    </ClInclude>
+    <ClInclude Include="embed_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="setconfig.h">
+      <Filter>Source Files\commands\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="database_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sendpanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="create_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="close_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="open_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="delete_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyBot.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
