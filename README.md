@@ -1,3 +1,7 @@
+<div align="center"><img src="https://user-images.githubusercontent.com/87577447/194767433-b6e04d5e-f937-44e9-81a0-c8df37537a1e.jpg" width="200" height="200"/>
+<h1>Taskbox Discord Bot</1>
+</div>
+
 ### :pencil: About this project
 - This project was created by [shawtygold](https://github.com/Shawtygold).
 - This repository is my course project and perhaps it will be updated as new ideas become available :)
