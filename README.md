@@ -1,4 +1,4 @@
-<div align="center"><img src="https://user-images.githubusercontent.com/87577447/194767433-b6e04d5e-f937-44e9-81a0-c8df37537a1e.jpg" width="200" height="200"/>
+<div align="center"><img src="https://github.com/Shawtygold/Taskbox/blob/master/DiscordBotIcon.png" width="200" height="200"/>
 <h1>Taskbox Discord Bot</1>
 </div>
 
