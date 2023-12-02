@@ -17,7 +17,7 @@ void create_task(dpp::cluster& bot, const dpp::button_click_t& event) {
 
 	const bool bot_permissions = event.command.app_permissions.has(dpp::p_manage_channels, dpp::p_manage_roles);
 
-	event.thinking(true);
+	event.reply();
 
 	// if the guild is not found
 	if (gFind == nullptr) 

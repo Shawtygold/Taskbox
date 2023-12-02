@@ -17,7 +17,7 @@ void close_task(dpp::cluster& bot, const dpp::button_click_t& event) {
 
 	const bool bot_permissions = event.command.app_permissions.has(dpp::p_manage_channels, dpp::p_manage_roles);
 
-	event.thinking(true);	
+	event.reply();	
 	
 	// if the guild is not found
 	if (gFind == nullptr) 
@@ -139,12 +139,15 @@ void close_task(dpp::cluster& bot, const dpp::button_click_t& event) {
 	{
 		if (callback.is_error()) {
 			bot.log(dpp::loglevel::ll_error, callback.get_error().message);
+			std::string err_msg = callback.get_error().message;
 
-			dpp::embed* embed = { new dpp::embed(embed_manager::create_embed(ex_color, "Callback error", callback.get_error().message)) };
-			bot.interaction_followup_create(event.command.token, dpp::message(event.command.channel_id, *embed).set_flags(dpp::m_ephemeral), 0);
-			delete embed; embed = nullptr;
+			if (err_msg.find("The resource is being rate limited") == std::string::npos) {
+				dpp::embed* embed = { new dpp::embed(embed_manager::create_embed(ex_color, "Callback error", callback.get_error().message)) };
+				bot.interaction_followup_create(event.command.token, dpp::message(event.command.channel_id, *embed).set_flags(dpp::m_ephemeral), 0);
+				delete embed; embed = nullptr;
 
-			return;
+				return;
+			}
 		}
 	});
 
@@ -169,12 +172,6 @@ void close_task(dpp::cluster& bot, const dpp::button_click_t& event) {
 
 		return;
 	}
-
-	dpp::embed* complete_embed = { new dpp::embed(embed_manager::create_embed(complete_color, complete_title, "Task successfully closed!")) };
-	// event reply
-	bot.interaction_followup_create(event.command.token, dpp::message(channel_id, *complete_embed).set_flags(dpp::m_ephemeral), 0);
-
-	delete complete_embed; complete_embed = nullptr;
 
 	dpp::embed* embed = { new dpp::embed()};
 	embed->set_color(dpp::colors::red);

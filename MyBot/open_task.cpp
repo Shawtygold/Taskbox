@@ -17,7 +17,7 @@ void open_task(dpp::cluster& bot, const dpp::button_click_t& event) {
 
 	const bool bot_permissions = event.command.app_permissions.has(dpp::p_manage_channels, dpp::p_manage_roles);
 
-	event.thinking(true);
+	event.reply();
 
 	// if the guild is not found
 	if (gFind == nullptr) 
@@ -140,8 +140,8 @@ void open_task(dpp::cluster& bot, const dpp::button_click_t& event) {
 		return;
 	}
 
-	// event reply
-	bot.interaction_followup_create(event.command.token, dpp::message(channel_id, "Task successfully opened!").set_flags(dpp::m_ephemeral), 0);
+	//// event reply
+	//bot.interaction_followup_create(event.command.token, dpp::message(channel_id, "Task successfully opened!").set_flags(dpp::m_ephemeral), 0);
 
 	dpp::embed* embed = { new dpp::embed() };
 	embed->set_color(dpp::colors::green);
