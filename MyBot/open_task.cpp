@@ -140,9 +140,6 @@ void open_task(dpp::cluster& bot, const dpp::button_click_t& event) {
 		return;
 	}
 
-	//// event reply
-	//bot.interaction_followup_create(event.command.token, dpp::message(channel_id, "Task successfully opened!").set_flags(dpp::m_ephemeral), 0);
-
 	dpp::embed* embed = { new dpp::embed() };
 	embed->set_color(dpp::colors::green);
 	embed->set_description("Task opened by " + source_member.get_mention());
