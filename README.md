@@ -29,11 +29,14 @@ Bot current version:
 - The bot also contains a `/ban`, `/kick` and `/timeout` commands
 
  ### 📜 Some notes
- This project supports:
+ **This project supports:**
  - Microsoft Windows 10-11 `x64`
  - Visual Studio platform `x64`
  - C++ 20
- - `sqlite3.c` file has been added to gitignore, to make the bot work you need to download [archive](https://www.sqlite.org/2023/sqlite-amalgamation-3440200.zip) with sqlite files and add `sqlite3.c` to the project. Then call the `database::create_tables` method in `Bot::on_ready` event.
+
+
+### 💿 Download and using
+ - `sqlite3.c` file has been added to gitignore, to make the bot work you need to download [archive](https://www.sqlite.org/2023/sqlite-amalgamation-3440200.zip) with sqlite files and add `sqlite3.c` to the project. Then call the `database::create_tables` method in `Bot::on_ready` event. After the first run, remove `database::create_tables` from the event.
 
  ### 🤝 Support me
  - Please leave me a star if you like it. Thank you very much!
