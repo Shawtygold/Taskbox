@@ -29,7 +29,7 @@ Bot current version:
 - The bot also contains a `/ban`, `/kick` and `/timeout` commands
 
  ### 📜 Some notes
- **This project supports:**
+ This project supports:
  - Microsoft Windows 10-11 `x64`
  - Visual Studio platform `x64`
  - C++ 20
