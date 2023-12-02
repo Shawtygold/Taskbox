@@ -9,11 +9,11 @@
 ### 📚 Libraries and version
 These are libraries that we're using in this project:
 - [Dpp](https://github.com/brainboxdotcc/DPP) - version `10.0.22`
-- [Sqlite](https://www.sqlite.org/cintro.html) `latest`
+- [Sqlite](https://www.sqlite.org/cintro.html)
 - [Template](https://github.com/brainboxdotcc/windows-bot-template)
 
 Bot current version: 
-- Version - `0.1`
+- Version - `1.1`
 
 ### 📖 Functional
 #### How to work with a bot?
