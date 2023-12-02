@@ -383,3 +383,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 .idea/
 *.sln.iml
+/MyBot/sqlite3.c
+/MyBot/test.db
