@@ -88,7 +88,7 @@ void setconfig(dpp::cluster& bot, const dpp::slashcommand_t& event) {
 
 		dpp::embed* log_embed = { new dpp::embed() };
 		log_embed->set_color(0x9246FF);
-		log_embed->set_description("Configuration successfully registered!");
+		log_embed->set_description("Configuration successfully registered by " + source_member.get_mention() + "!");
 
 		bot.message_create(dpp::message(log_channel->id, *log_embed));
 
