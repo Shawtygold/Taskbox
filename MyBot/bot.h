@@ -12,6 +12,7 @@
 #include "close_task.h"
 #include "open_task.h"
 #include "delete_task.h"
+#include "information.h"
 
 class Bot {
 

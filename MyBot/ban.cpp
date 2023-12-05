@@ -2,7 +2,7 @@
 
 void ban(dpp::cluster& bot, const dpp::slashcommand_t& event) {
 
-	const std::string exception_title = "<:failed:1036206712916553748> Error";
+	const std::string exception_title = "Exception";
 	const std::string warn_title = "Warning";
 	const std::string complete_title = "Complete";
 	const uint32_t warn_color = 0xFFD619;

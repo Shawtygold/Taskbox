@@ -75,8 +75,10 @@ void Bot::register_commands()
 	// send panel command
 	dpp::slashcommand sendpanel_command("sendpanel", "Sends a panel to this channel.", bot.me.id);
 
+	dpp::slashcommand info_command("info", "Shows information about the Taskbox", bot.me.id);
+
 	// create commands
-	bot.global_bulk_command_create(std::vector{ ban_command, kick_command, timeout_command, setconfig_command, sendpanel_command });
+	bot.global_bulk_command_create(std::vector{ info_command, ban_command, kick_command, timeout_command, setconfig_command, sendpanel_command });
 }
 
 void Bot::on_ready(const dpp::ready_t& event) 
@@ -88,20 +90,25 @@ void Bot::on_ready(const dpp::ready_t& event)
 
 void Bot::command_handler(const dpp::slashcommand_t& event) 
 {
-	if (event.command.get_command_name() == "ban") {
+	std::string command_name = event.command.get_command_name();
+
+	if (command_name == "ban") {
 		ban(bot, event);
 	}
-	else if (event.command.get_command_name() == "kick") {
+	else if (command_name == "kick") {
 		kick(bot, event);
 	}
-	else if (event.command.get_command_name() == "timeout") {
+	else if (command_name == "timeout") {
 		timeout(bot, event);
 	}
-	else if (event.command.get_command_name() == "setconfig") {
+	else if (command_name == "setconfig") {
 		setconfig(bot, event);
 	}
-	else if (event.command.get_command_name() == "sendpanel") {
+	else if (command_name == "sendpanel") {
 		send_panel(bot, event);
+	}
+	else if (command_name == "info") {
+		info(bot, event);
 	}
 }
 

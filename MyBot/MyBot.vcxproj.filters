@@ -90,6 +90,9 @@
     <ClCompile Include="sqlite3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="information.cpp">
+      <Filter>Source Files\src\tasks</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dependencies\include\dpp-10.0\dpp\auditlog.h">
@@ -261,6 +264,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="delete_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="information.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

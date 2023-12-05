@@ -187,6 +187,7 @@
     <ClCompile Include="database_manager.cpp" />
     <ClCompile Include="delete_task.cpp" />
     <ClCompile Include="embed_manager.cpp" />
+    <ClCompile Include="information.cpp" />
     <ClCompile Include="kick.cpp" />
     <ClCompile Include="MyBot.cpp" />
     <ClCompile Include="open_task.cpp" />
@@ -246,6 +247,7 @@
     <ClInclude Include="dependencies\include\dpp-10.0\dpp\win32_safe_warnings.h" />
     <ClInclude Include="dependencies\include\dpp-10.0\dpp\wsclient.h" />
     <ClInclude Include="embed_manager.h" />
+    <ClInclude Include="information.h" />
     <ClInclude Include="kick.h" />
     <ClInclude Include="MyBot.h" />
     <ClInclude Include="open_task.h" />
