@@ -2,21 +2,12 @@
 <h1>Taskbox Discord Bot</1>
 </div>
 
-### :pencil: About this project
-- This project was created by [shawtygold](https://github.com/Shawtygold).
-- This repository is my course project and perhaps it will be updated as new ideas become available :)
+## :pencil: About this project
 
-### 📚 Libraries and version
-These are libraries that we're using in this project:
-- [Dpp](https://github.com/brainboxdotcc/DPP) - version `10.0.22`
-- [Sqlite](https://www.sqlite.org/cintro.html)
-- [Template](https://github.com/brainboxdotcc/windows-bot-template)
+A Discord bot built with C++ using the D++ library. The primary functionality is creating Discord channels as tasks for tracking purposes. It can be used for more convenient organisation of employees' work on the Discord server. Additionally, the bot includes moderation commands such as `/ban`, `/kick`, and `/timeout`.
 
-Bot current version: 
-- Version - `1.1`
-
-### 📖 Functional
-#### How to work with a bot?
+## 📖 Functional
+### How to work with a bot?
 - Create a configuration `/setconfig` command
 - Send the interaction panel to any discord channel `/sendpanel` command
 - Create a task by clicking on the button
@@ -24,15 +15,20 @@ Bot current version:
 - Close the task using the message in the task channel
 - Delete a task
 
-#### Additional functionality
+### Additional functionality
 - The bot implements the function of logging interactions with tasks. To view logs, you need to specify the logging channel in the configuration (`/setconfig` command)
-- The bot also contains a `/ban`, `/kick` and `/timeout` commands
+- `/ban`, `/kick` and `/timeout` commands for naughty users
 
- ### 📜 Some notes
- This project supports:
- - Microsoft Windows 10-11 `x64`
- - Visual Studio platform `x64`
- - C++ 20
+## 📚 Contributing
 
- ### 🤝 Support me
- - Please leave me a star if you like it. Thank you very much!
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add your feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a pull request.
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
